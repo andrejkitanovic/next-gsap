@@ -1,0 +1,61 @@
+@import "styles/colors.scss";
+
+.Navigation {
+  margin-left: 122px;
+  display: flex;
+  padding: 10px 150px;
+  justify-content: space-between;
+
+  .logo {
+    font-family: "Crozzoe";
+    font-size: 80px;
+    color: white;
+
+    span {
+      color: $main;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+
+    a {
+      position: relative;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 20px;
+        height: 2px;
+        background: $main;
+        opacity: 0;
+      }
+
+      &:hover {
+        color: $main;
+      }
+
+      &.active {
+        color: $main;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .profile {
+    min-width: 50%;
+  }
+}

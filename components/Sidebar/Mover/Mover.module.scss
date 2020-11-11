@@ -1,0 +1,98 @@
+@import "styles/colors.scss";
+
+.Mover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+  min-height: 600px;
+
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #121418;
+    z-index: -1;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #121418;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+    transition: 0.2s;
+
+    svg {
+      fill: white;
+      font-size: 30px;
+    }
+    &:first-of-type:hover {
+      padding-bottom: 10px;
+    }
+    &:last-of-type:hover {
+      padding-top: 10px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    z-index: 1;
+    background: black;
+    .dot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0.6;
+      border: 3px solid transparent;
+      transition: 0.3s;
+      animation: spin infinite 2s;
+
+      &:after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: $main;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        // animation-play-state: running;
+        border-top: 3px solid $main;
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

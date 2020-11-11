@@ -1,0 +1,35 @@
+@import "styles/colors.scss";
+
+.Home {
+  padding-top: 50px;
+  padding-left: 150px;
+
+  h3,
+  h1 {
+    font-family: "Crozzoe";
+    text-transform: uppercase;
+    font-size: 250px;
+    font-weight: normal;
+
+    color: white;
+  }
+
+  h1 {
+    height: 150px;
+    margin-bottom: 70px;
+  }
+
+  h3 {
+    height: 40px;
+    font-size: 100px;
+    letter-spacing: 20px;
+    color: $main;
+  }
+
+  p {
+    color: #6c7177;
+    max-width: 30%;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

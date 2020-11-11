@@ -1,0 +1,45 @@
+@import "styles/colors.scss";
+
+.Sidebar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 100%;
+  border-right: 2px solid #121418;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #e0c08c21;
+    box-shadow: 0 0 45px 15px #e0c08c3b;
+    cursor: pointer;
+
+    svg {
+      color: $main;
+      font-size: 40px;
+    }
+  }
+
+  .instagram {
+      cursor: pointer;
+    svg {
+      font-size: 30px;
+      color: rgb(216, 216, 216);
+    }
+  }
+}
