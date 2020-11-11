@@ -9,18 +9,18 @@ const Navigation = (props) => {
   const links = useRef(null);
 
   useEffect(() => {
-    TweenMax.from(logo.current, 1, {
-      delay: 2,
+    TweenMax.staggerFrom([logo.current,links.current], 1, {
+      delay: 2.5,
       opacity: 0,
       y: 20,
-      ease: Expo.easeInOut,
+      // ease: Expo.easeInOut,
     });
-    TweenMax.from(links.current, 1, {
-      delay: 2,
-      opacity: 0,
-      y: 20,
-      ease: Expo.easeInOut,
-    });
+    // TweenMax.from(links.current, 1, {
+    //   delay: 2,
+    //   opacity: 0,
+    //   y: 20,
+    //   // ease: Expo.easeInOut,
+    // });
   }, []);
 
   return (

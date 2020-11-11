@@ -23,19 +23,19 @@ function MyApp({ Component, pageProps }) {
     });
     TweenMax.to("#b", 1, {
       delay:0.2,
-      opacity:0,
+      // opacity:0,
       x: -1920,
       ease: Expo.easeInOut,
     });
     TweenMax.to("#c", 1, {
       delay:0.4,
-      opacity:0,
+      // opacity:0,
       x: -1920,
       ease: Expo.easeInOut,
     });
     TweenMax.to("#d", 1, {
       delay:0.6,
-      opacity:0,
+      // opacity:0,
       x: -1920,
       ease: Expo.easeInOut,
     });
