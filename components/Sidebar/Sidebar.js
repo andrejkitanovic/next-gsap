@@ -2,7 +2,7 @@ import styles from "./Sidebar.module.scss";
 import {useRef,useEffect} from 'react'
 import Mover from "./Mover/Mover";
 
-import { GiBatteredAxe } from "react-icons/gi";
+import { GiBatwingEmblem } from "react-icons/gi";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 import { TweenMax, Expo } from "gsap";
@@ -23,7 +23,7 @@ const Sidebar = (props) => {
     <div className={styles.Sidebar} ref={sideBar}>
       <div className={styles.container}>
         <div className={styles.icon}>
-          <GiBatteredAxe />
+          <GiBatwingEmblem />
         </div>
         <Mover />
         <div className={styles.instagram}>

@@ -3,14 +3,15 @@
 .Navigation {
   margin-left: 122px;
   display: flex;
-  padding: 10px 150px;
+  padding: 10px 100px 10px 150px;
   justify-content: space-between;
 
   .logo {
     font-family: "Crozzoe";
     font-size: 80px;
     color: white;
-
+    cursor: pointer;
+    padding-right: 30px;
     span {
       color: $main;
     }
@@ -56,6 +57,27 @@
   }
 
   .profile {
-    min-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: #6c7177;
+      border-radius: 50%;
+      margin-left: 30px;
+      opacity: 0.6;
+
+      svg{
+        color:$text;
+        font-size: 25px;
+      }
+    }
   }
 }

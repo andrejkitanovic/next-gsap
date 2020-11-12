@@ -1,0 +1,88 @@
+@import 'styles/colors.scss';
+
+.Title{
+.wrapperh3 {
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: -60px;
+}
+
+.wrapperh1 {
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+h3,
+h1 {
+  font-family: "Crozzoe";
+  text-transform: uppercase;
+  font-size: 250px;
+  font-weight: normal;
+
+  color: white;
+}
+
+h1 {
+  height: 150px;
+}
+
+h3 {
+  height: 40px;
+  font-size: 100px;
+  letter-spacing: 25px;
+  color: $main;
+}
+
+.description {
+  color: #6c7177;
+  max-width: 30%;
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  line-height: 30px;
+
+  div {
+    height: 35px;
+    overflow: hidden;
+  }
+}
+
+.wrapperCart {
+  margin-top: 50px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  width: 272px;
+  height: 80px;
+  background: $main;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  .go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: $text;
+    margin-left: 7px;
+    svg {
+      color: $background;
+      font-size: 25px;
+    }
+  }
+
+  span {
+    margin-left: 30px;
+    font-size: 23px;
+    color: $background;
+    overflow: hidden;
+  }
+}
+}

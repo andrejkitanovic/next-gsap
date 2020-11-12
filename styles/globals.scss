@@ -29,7 +29,7 @@ body {
 }
 
 .black {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -48,16 +48,39 @@ body {
   }
 }
 
+
 .moon {
   position: absolute;
   background: url("/moon.png") no-repeat center center;
   background-size: cover;
   width: 100vh;
   height: 90vh;
-  right: calc(0% + var(--moveX));
-  top: calc(7% + var(--moveY));
+  right: calc(0%);
+  top: calc(7%);
+  z-index: 1;
+  opacity: 1;
+}
+
+.highnoon,.dark{
+  position: absolute;
+  font-family: 'Crozzoe';
+  font-size: 550px;
+  right: 20%;
+  top:45%;
   z-index: -1;
-  opacity: 0.8;
+  opacity: 0.3;
+  background: -webkit-linear-gradient(50deg ,black 10%,#eee, );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark{
+  background: -webkit-linear-gradient(50deg ,#eee , black  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // opacity: 0.1;
+  right: 0%;
+  top:10%;
 }
 
 a {
