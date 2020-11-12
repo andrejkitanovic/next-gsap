@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
       ease: Expo.easeInOut,
     });
 
+
     TweenMax.to("#a", 1, {
       x: -1920,
       ease: Expo.easeInOut,
@@ -49,6 +50,7 @@ function MyApp({ Component, pageProps }) {
       opacity:0
     })
   }, []);
+
 
   return (
     <>

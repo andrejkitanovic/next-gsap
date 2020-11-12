@@ -1,7 +1,7 @@
 import styles from "./Title.module.scss";
 
 import { useEffect, useRef } from "react";
-import { TweenMax } from "gsap";
+import { TweenMax, Expo } from "gsap";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Title = (props) => {
@@ -9,6 +9,7 @@ const Title = (props) => {
   const header = useRef(null);
   const description = useRef(null);
   const cart = useRef(null);
+  const go = useRef(null);
 
   useEffect(() => {
     TweenMax.from(smallHeader.current, 1.5, {
@@ -34,6 +35,24 @@ const Title = (props) => {
       y: 110,
     });
   }, []);
+
+  const goOnEnter = () => {
+    TweenMax.to(go.current, .5, {
+      width:255,
+      background:"#E0C08D",
+      ease: Expo.easeInOut,
+    });
+
+
+  };
+
+  const goOnLeave = () => {
+    TweenMax.to(go.current, .5, {
+      width:66,
+      background:"#FFF",
+      ease: Expo.easeInOut,
+    });
+  }
 
   return (
     <div className={styles.Title}>
@@ -62,8 +81,8 @@ const Title = (props) => {
       </div>
 
       <div className={styles.wrapperCart}>
-        <div className={styles.cart} ref={cart}>
-          <div className={styles.go}>
+        <div className={styles.cart} ref={cart}  onMouseEnter={goOnEnter} onMouseLeave={goOnLeave}>
+          <div className={styles.go} ref={go}>
             <HiOutlineShoppingCart />
           </div>
           <span>Go to shop</span>
