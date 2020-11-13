@@ -19,7 +19,6 @@ h1 {
   text-transform: uppercase;
   font-size: 250px;
   font-weight: normal;
-
   color: white;
 }
 
@@ -30,7 +29,7 @@ h1 {
 h3 {
   height: 40px;
   font-size: 100px;
-  letter-spacing: 25px;
+  letter-spacing: 15px;
   color: $main;
 }
 
@@ -43,6 +42,7 @@ h3 {
 
   div {
     height: 35px;
+    width: 400px;
     overflow: hidden;
   }
 }

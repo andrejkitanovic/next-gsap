@@ -21,7 +21,7 @@ const Navigation = (props) => {
   return (
     <div className={styles.Navigation}>
       <div className={styles.logo} ref={logo}>
-        high<span>noon.</span>
+        luna<span>go</span>
       </div>
 
       <div className={styles.links} ref={links}>

@@ -17,13 +17,13 @@ const Title = (props) => {
       y: 500,
       skewY: 20,
     });
-    TweenMax.from(header.current, 2, {
+    TweenMax.from(header.current, 1.5, {
       delay: 1.5,
       y: 600,
       skewY: 20,
     });
-    TweenMax.from(".line", 1, {
-      delay: 2,
+    TweenMax.from(".line", 1.5, {
+      delay: 1.5,
       y: 200,
       skewY: 10,
       stagger: {
@@ -31,7 +31,7 @@ const Title = (props) => {
       },
     });
     TweenMax.from(cart.current, 0.8, {
-      delay: 3,
+      delay: 2,
       y: 110,
     });
   }, []);
@@ -61,22 +61,22 @@ const Title = (props) => {
       </div>
 
       <div className={styles.wrapperh1}>
-        <h1 ref={header}>HIGHNOON</h1>
+        <h1 ref={header}>LUNAGO</h1>
       </div>
 
       <div className={styles.description} ref={description}>
         <div className="wrapper">
           <div className="line">
-            Welcome to the biggest moonshop in the world, we will
+            Welcome to the biggest gothic shop
           </div>
         </div>
         <div className="wrapper">
           <div className="line">
-            show you everything you every wanted to see, for more info
+            on the web, feel free to discover new
           </div>
         </div>
         <div className="wrapper">
-          <div className="line">you can visit our shop</div>
+          <div className="line">dark sides in our shop</div>
         </div>
       </div>
 

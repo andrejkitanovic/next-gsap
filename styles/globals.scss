@@ -22,31 +22,34 @@ body {
 }
 
 body {
-  background: url("/background.png") no-repeat center center;
+  background:black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background{
+  position: absolute;
+  background:linear-gradient(90deg,black 30%,#3C4754);
+  // background: url("/background.png") no-repeat center center;
+  // background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+}
+
+.clouds{
+  position: absolute;
+  // background:linear-gradient(90deg,black 30%,#3C4754);
+  background: url("/clouds.png") no-repeat center center;
   background-size: cover;
-  width: 100vw;
+  width: 80%;
   height: 100vh;
+  top:-10%;
+  right: -10%;
+  z-index: -100;
 }
 
-.black {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  pointer-events: none;
 
-  #a,
-  #b,
-  #c,
-  #d {
-    width: 100%;
-    height: 100%;
-    background: black;
-  }
-}
 
 
 .moon {
@@ -61,6 +64,8 @@ body {
   top: calc(7%);
   z-index: -1;
   opacity: 1;
+  // transform: perspective(500px) translateZ(100px);
+
 }
 
 .highnoon,.dark{
